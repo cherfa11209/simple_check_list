@@ -5,22 +5,64 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="grid">
-		<h1>Today's to do list</h1>
-		<p id="first">No excuses</p>
-		<input id="userinput" type="text" placeholder="enter items">
-		<input id="enter" type="button" value="Add Task">
-		<ul>
-			<li class="bold red" random="23">Wake up by 10 a.m<button class="delete">delete</button></li>
-			<li>feed pets<button class='delete'>delete</button></li>
-			<li>Meditate<button class='delete'>delete</button></li>
-			<li>Study for 3 hours<button class='delete'>delete</button></li>
-			<li>Work for 3 hours<button class='delete'>delete</button></li>
-			<li>Get to bed by 1.30 a.m<button class='delete'>delete</button></li>
-		</ul>
-		<img src="original.jpg" class="background1">
-		<img src="original.jpg" class="background2">
-		<footer class="foot">~~~sherifcherfa@gmail.com~~~<br> ~~~github: @cherfa11209~~~ <br> ~~~repl: @skytry~~~</footer>
+	<div class="wrapper">
+
+		<div class="header">
+			<h1>Today's to do list</h1>
+		</div>
+
+
+		<div class="to-dos">
+
+			<div class="top">
+				<p id="first">No excuses</p>
+				<input id="userinput" type="text" placeholder="enter items">
+				<input id="enter" type="button" value="Add Task">
+			</div>
+			
+			<ul>
+
+				<li class="list-it" random="23" class="list-it">
+					<p>Wake up by 10 a.m</p>
+					<button class="delete">delete</button>
+				</li>
+
+				<li class="list-it">
+					<p>feed pets</p>
+					<button class='delete'>delete</button>
+				</li>
+
+				<li class="list-it">
+					<p>Meditate</p>
+					<button class='delete'>delete</button>
+				</li>
+
+				<li class="list-it">
+					<p>Study for 3 hours</p>
+					<button class='delete'>delete</button>
+				</li>
+
+				<li class="list-it">
+					<p>Work for 3 hours</p>
+					<button class='delete'>delete</button>
+				</li>
+
+				<li class="list-it">
+					<p>Get to bed by 1.30 a.m</p>
+					<button class='delete'>delete</button>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="footer">
+			<footer class="foot">
+				<a href="https://github.com/cherfa11209" target="_blank">
+					<img class="github" src="github.png" alt="github icon">
+				</a>
+			</footer>
+		</div>
+	
 	</div>
 	<script type="text/javascript" src="script.js"></script>
 </body>

@@ -1,3 +1,5 @@
+/************************ ALL NECCESSARY VARIBALES *********************************/
+
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
@@ -5,6 +7,10 @@ var dels = document.querySelectorAll('button')
 var li = document.querySelectorAll("li")
 var list_items = Array.from(li)
 var delete_buttons = Array.from(dels)
+
+/**********************************************************************************/
+
+/*************************** ALL NECESSARY FUNCTIONS ******************************/
 
 function inputLength() {
 	return input.value.length;
@@ -28,6 +34,7 @@ function del(){
 function createListElement() {
 	var li = document.createElement("li");
 	var button = document.createElement("button")
+	li.classList.add('list-it')
 	button.appendChild(document.createTextNode("delete"));
 	li.appendChild(document.createTextNode(input.value));
 	li.appendChild(button);
@@ -55,9 +62,13 @@ function addListAfterKeypress(event) {
 	}
 }
 
+/****************************************************************/
+
 listen();
 del();
 
+
+/******************* ALL EVENT LISTENERS **********************/
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
